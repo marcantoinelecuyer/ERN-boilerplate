@@ -2,7 +2,9 @@
 
 A full ERN boilerplate (Express-React-Node) for Web Apps.
 
-The project has the client and server code separated.
+The project has the client and server environment separated.
+
+Both server and client can be started with `yarn dev`.
 
 ## Server
 
@@ -59,3 +61,13 @@ client
            └─ ...
 
 ```
+
+## Resources
+
+[React](https://facebook.github.io/react/) - View Library
+
+[Express](https://expressjs.com/) - Node Application Framework
+
+[Babel](https://babeljs.io/) - ES6+ Compiler
+
+[Jest](https://jestjs.io/) - Testing Framework
