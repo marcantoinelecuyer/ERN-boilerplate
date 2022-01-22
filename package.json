@@ -9,7 +9,6 @@
     "client": "cd client && yarn start"
   },
   "dependencies": {
-    "concurrency": "^0.1.4",
-    "dotenv": "^14.2.0"
+    "concurrency": "^0.1.4"
   }
 }
