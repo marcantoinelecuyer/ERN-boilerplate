@@ -1,14 +1,21 @@
 {
-  "name": "boilerplate-server",
+  "name": "uxray-console-server",
   "version": "1.0.0",
   "main": "src/server.js",
   "license": "MIT",
   "scripts": {
     "start": "nodemon src/server.js --exec babel-node",
-    "build": "babel ./src -d build",
+    "build": "babel ./src -d build && yarn remove-babel",
+    "start-build": "node build/server",
+    "remove-babel": "yarn remove @babel/cli @babel/core @babel/node @babel/preset-env",
     "test": "jest"
   },
   "dependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.14.5",
     "crypto": "^1.0.1",
     "dotenv": "^14.2.0",
     "express": "^4.17.2",
@@ -16,10 +23,6 @@
     "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.16.8",
-    "@babel/core": "^7.16.10",
-    "@babel/node": "^7.16.8",
-    "@babel/preset-env": "^7.16.11",
     "jest": "^27.4.7",
     "nodemon": "^2.0.15"
   }
